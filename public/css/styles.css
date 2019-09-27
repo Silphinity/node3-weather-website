@@ -37,6 +37,11 @@ header a {
     text-decoration: none;
 }
 
+body a {
+    text-decoration: none;
+    color: #1c1d4c;
+}
+
 .portrait {
     width: 250px;
 }
@@ -49,5 +54,9 @@ header a {
 button {
     cursor: pointer;
     border: 1px solid #888888;
-    background: #888888
+    background: #888888;
+    padding: 5px;
+    color: white;
+    font-size:11px;
+    margin-left:5px;
 }

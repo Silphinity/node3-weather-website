@@ -10,7 +10,7 @@ const forecast = (latitude, longitude, callback) => {
         } else{
 
             const current = body.currently
-            const daily = body.daily
+            const daily = body.daily.data[0]
             callback(undefined, {
                 summary: daily.summary,
                 temperature: current.temperature,

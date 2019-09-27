@@ -22,7 +22,7 @@ app.use(express.static(publicDirectoryPath))
 
 app.get('', (req, res) => {
     res.render('index', {
-        title: 'Weather',
+        title: 'WEATHER',
         name: 'Sean Hurwitz'
     })
 })
@@ -64,7 +64,10 @@ app.get('/weather', (req, res) => {
             }
             res.send({
                 location,
-                forecast: summary+"Temperature (C) : "+temperature+"Rainfall: "+rainfall+"%Wind Speed: "+windSpeed+"kph"
+                summary,
+                temperature,
+                rainfall,
+                windSpeed
             })
             })
         }
